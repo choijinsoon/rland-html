@@ -31,7 +31,6 @@
 
     cursor: pointer;
 }
-
 /* .btn-toggle .thumb,
 .btn-toggle span */
 .btn-toggle::before{
@@ -55,13 +54,13 @@
 
     transition: left 1.5s;
 }
-
+.btn-toggle:hover,
 .btn-toggle-on{
     background-color: orange;
     border-radius: 0 calc(var(--radius) / 2) calc(var(--radius) / 2) 0;
+
+    transition: border-radius .5s;
 }
-
-
 /* .btn-toggle-on .thumb,
 .btn-toggle-on span */
 .btn-toggle-on::before{
