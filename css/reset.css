@@ -1,0 +1,11 @@
+/* 기본 스타일 제거 */
+body, h1, h2, ul, li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
