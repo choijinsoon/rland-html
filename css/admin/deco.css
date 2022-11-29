@@ -2,6 +2,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 .deco::before{
     content: "";
@@ -11,7 +12,6 @@
     /* background: url(/image/search-black.svg) no-repeat center/contain; */
 
     background-color: orange;
-    -webkit-mask-image: url(/image/search.svg);
     -webkit-mask-size: 32px 32px;
 }
 .deco:hover{
@@ -21,6 +21,7 @@
     border-radius: 16px;
 
     transition: .5s;
+    transform: scale(1.05);
 }
 .deco:hover::before{
     background-color: white;
@@ -28,54 +29,12 @@
     transition: .5s;
 }
 
-.deco-note{
-    display: inline-flex;
-    align-items: center;
-    padding: 5px;
-}
 .deco-note::before{
-    content: "";
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    /* background: url(/image/notice.svg) no-repeat center/contain; */
-
-    background-color: orange;
     -webkit-mask-image: url(/image/notice.svg);
-    -webkit-mask-size: 32px 32px;
-}
-.deco-note:hover{
-    background-color: orange;
-    color: white;
-
-    border-radius: 16px;
-
-    transition: .5s;
-}
-.deco-note:hover::before{
-    background-color: white;
-
-    transition: .5s;
 }
 
-
-
-
-
-
-
-.deco-dashboard{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;   
-}
 .deco-dashboard::before{
-    content: "";
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin: 0 5px;
-    background: url(/image/graph.svg) no-repeat center/contain;
+    -webkit-mask-image: url(/image/dashboard.svg);
 }
 .deco-user-manage{
     display: inline-flex;
