@@ -70,3 +70,23 @@
 
     left: calc(var(--radius));
 }
+
+
+
+
+/* ==============================*/
+@media (min-width: 500px){
+    .btn-toggle{
+        --radius:50px
+    }
+}
+
+@media (min-width: 800px){
+    .btn-toggle{
+        --radius:80px
+    }
+}
+
+
+
+

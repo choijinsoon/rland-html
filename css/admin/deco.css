@@ -11,20 +11,17 @@
     height: 32px;
     /* background: url(/image/search-black.svg) no-repeat center/contain; */
 
-    background-color: orange;
+    background-color: #ffffff;
     -webkit-mask-size: 32px 32px;
 }
 .deco:hover{
-    background-color: orange;
-    color: white;
-
-    border-radius: 16px;
+    color: #ff9900;
 
     transition: .5s;
     transform: scale(1.05);
 }
 .deco:hover::before{
-    background-color: white;
+    background-color: #ff9900;
 
     transition: .5s;
 }
