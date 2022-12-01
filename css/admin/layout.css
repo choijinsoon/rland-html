@@ -39,9 +39,6 @@ body{
 }
 
 @media (min-width: 800px){
-    .body{
-        flex-direction: row;
-    }
     .main{
         background-color: aqua;
         

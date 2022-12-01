@@ -76,13 +76,13 @@
 
 /* ==============================*/
 @media (min-width: 500px){
-    .btn-toggle{
+    .btn-toggle-md{
         --radius:50px
     }
 }
 
 @media (min-width: 800px){
-    .btn-toggle{
+    .btn-toggle-lg{
         --radius:80px
     }
 }
