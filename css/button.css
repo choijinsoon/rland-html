@@ -117,13 +117,22 @@ input:checked + .slider:before {
 
 } */
 
+.menu{
+    padding: 20px 0px;
+
+    border-bottom: 1px solid #ff9900;
+}
+.menu:last-child{
+    border: none;
+}
 
 .menu form{
     display: grid;
     grid-template: 
     "img title title" 24px
     "img price option" 24px
-    "img button button" 32px /80px 60px 1fr;
+    "img button button" 32px /80px 80px 1fr;
+
 }
 
 .menu form>h1{
@@ -139,11 +148,13 @@ input:checked + .slider:before {
     border-radius: 40px;
     object-fit: cover;
 
+}
+.menu-img-box{
     grid-area: img;
 }
-
 .menu-price{
     grid-area: price;
+    margin-left: 10px;
 }
 
 
@@ -159,9 +170,10 @@ input:checked + .slider:before {
 }
 
 .menu-option{
-    width: 12px;
+    display: inline-flex;
+    align-items: center;
+    width: 60px;
     height: 12px;
-    border: 1px solid #a24f17;
 
     grid-area: option;
 }
@@ -170,13 +182,63 @@ input:checked + .slider:before {
     background-color: #a24f17;
 }
 
-.menu-option{
-    display: inline-flex;
-    align-items: center;
-}
-
 .menu-option .menu-option-input{
     margin-right: 5px;
 }
 
+
+
+/* ========================== */
+@media (min-width: 300px){
+    .menu-list{
+        display: flex;
+        justify-content: space-between;
+        stroke-dasharray: ;
+    }
+    .menu{
+        flex-shrink: 0;
+        padding: 0 0 10px 0;
+        width: 200px;
+        border: 1px solid #ff9900;
+    }
+    .menu:last-child{
+        border: 1px solid #ff9900;
+    }
+    .menu form{
+        display: grid;
+        grid-template: 
+        "img img" 130px
+        "title price" 30px
+        "option option" 32px
+        "button button" 40px /1fr 80px;
+    }
+    .menu-img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        object-fit: cover;
+    }
+    .menu-option-list{
+        justify-self: center;
+
+        display: flex;
+        align-items: center;
+    }
+    .menu-button-list{
+        justify-self: center;
+
+        display: flex;
+        align-items: center;
+    }
+    .menu form>h1{
+        justify-self: flex-start;
+        align-self: center;
+    }
+    .menu-price{
+        justify-self: flex-end;
+        align-self: center;
+        margin-right: 10px;
+
+    }
+}
 
