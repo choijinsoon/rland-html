@@ -1,3 +1,38 @@
+.btn{
+    padding: .4em .8em;
+    background-color: #000;
+    color: #fff;
+
+    line-height: 1.8em;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color .5s;
+}
+.btn-default{
+    border-radius: 20px;
+    border: #ff9900 1px solid;
+}
+.btn-default-fill{
+    background-color: #ff9900;
+    color: #fff;
+}
+.btn-default-line{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* The switch - the box around the slider */
 .switch {
     position: relative;
@@ -57,7 +92,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.btn {
+/* .btn {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -76,8 +111,72 @@ input:checked + .slider:before {
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 
 }
-.btn:hover, .container:hover{
+.btn:hover:hover{
     background-color: #ff990090;
     transform: scale(1.02);
 
+} */
+
+
+.menu form{
+    display: grid;
+    grid-template: 
+    "img title title" 24px
+    "img price option" 24px
+    "img button button" 32px /80px 60px 1fr;
 }
+
+.menu form>h1{
+    grid-area: title;
+    margin-left: 10px;
+
+    font-size: 15px;
+}
+
+.menu-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    object-fit: cover;
+
+    grid-area: img;
+}
+
+.menu-price{
+    grid-area: price;
+}
+
+
+.menu-option-list{
+    grid-area: option;
+    justify-self: flex-end;
+}
+
+.menu-button-list{
+    grid-area: button;
+    justify-self: flex-end;
+    
+}
+
+.menu-option{
+    width: 12px;
+    height: 12px;
+    border: 1px solid #a24f17;
+
+    grid-area: option;
+}
+
+.menu-option-on{
+    background-color: #a24f17;
+}
+
+.menu-option{
+    display: inline-flex;
+    align-items: center;
+}
+
+.menu-option .menu-option-input{
+    margin-right: 5px;
+}
+
+

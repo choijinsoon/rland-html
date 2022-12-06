@@ -1,0 +1,27 @@
+.input{
+    /* input.type = text; */
+}
+.input-chk{
+    width: 24px;
+    height: 24px;
+    border: #ff9900 1px solid;
+}
+.input-chk-on{
+    background-color: #ff9900;
+}
+.input-chk:focus{
+    background-color: #ff9900;
+}
+.menu-option{
+    display: inline-flex;
+    align-items: center;
+}
+.menu-option .input-chk{
+    margin-right: 5px;
+}
+.menu-img{
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    object-fit: cover;
+}
