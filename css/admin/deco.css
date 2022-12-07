@@ -11,17 +11,17 @@
     height: 32px;
     /* background: url(/image/search-black.svg) no-repeat center/contain; */
 
-    background-color: #ffffff;
+    background-color: #000;
     -webkit-mask-size: 32px 32px;
 }
 .deco:hover{
-    color: #ff9900;
+    color: #fff;
 
     transition: .5s;
     transform: scale(1.05);
 }
 .deco:hover::before{
-    background-color: #ff9900;
+    background-color: #fff;
 
     transition: .5s;
 }
@@ -49,4 +49,11 @@
 .deco-info::before{
     margin-right: 2px;
     -webkit-mask-image: url(/image/info.svg);
+}
+
+
+
+/* utils ======================= */
+.deco-white::before{
+    background-color: #fff;
 }

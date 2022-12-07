@@ -6,12 +6,14 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/reset.css'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'> -->
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/style.css'>
 
     <link rel='stylesheet' type='text/css' media='screen' href='../css/menu-component.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/icon.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/form.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/button.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/header.css'>
+    
 
     <link rel="stylesheet" href="../css/admin/deco.css" type="text/css">
 
@@ -22,6 +24,20 @@
     <script src='main.js'></script>
 </head>
 <body>
+    <header class="header">
+        <h1>알랜드</h1>
+        <ul class="d-none">
+            <li><a href="">카페메뉴</a></li>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">로그인</a></li>
+        </ul>
+        <div class="">
+            <a class="icon icon-menu" href="">확장메뉴</a>
+        </div>
+    </header>
+
+    <h1>메뉴 목록</h1>
+
     <section class="menu-section">
         <h1 th:text="${data}">메뉴 목록</h1>
         <div class="menu-list">
@@ -119,6 +135,5 @@
             </section>
         </div>
     </section>
-    <div class="btn deco deco-note deco-white">검색</div>
 </body>
 </html>
