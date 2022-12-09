@@ -1,5 +1,5 @@
 /* jejuro project button */
-/* .btn {
+.btn {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
@@ -22,7 +22,7 @@
     background-color: #ff990090;
     transform: scale(1.02);
 
-} */
+}
 
 
 
@@ -32,7 +32,7 @@
 
 /* 수업 실습 */
 
-.btn{
+/* .btn{
     padding: .4em .8em;
     background-color: #000;
     color: #fff;
@@ -41,7 +41,7 @@
     display: inline-flex;
     align-items: center;
     transition: background-color .5s;
-}
+} */
 .btn-default{
     border-radius: 20px;
     border: #ff9900 1px solid;
