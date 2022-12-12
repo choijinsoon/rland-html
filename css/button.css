@@ -23,6 +23,10 @@
     /* 새로운 버튼 스타일 */
 }
 
+.btn-fresh{
+    /* 신선한 버튼 스타일 */
+}
+
 .btn:hover:hover{
     background-color: #ff990090;
     transform: scale(1.02);
